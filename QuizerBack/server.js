@@ -14,7 +14,7 @@ const URI = process.env.DB_URI;
 app.use(cors());
 app.use(express.json()); // For parsing application/json
 app.use(cors({
-  origin: ["http://localhost:5173", "https://todo-front-ot0y.onrender.com"],
+  origin: ["http://localhost:5173", "https://quizermern-front.onrender.com"],
   methods: [ 'GET'],
   credentials: true
 }))
