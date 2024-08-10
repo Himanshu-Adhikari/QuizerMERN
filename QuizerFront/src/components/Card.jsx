@@ -16,7 +16,7 @@ const Card = () => {
 
   useEffect(() => {
     if (category && activity) {
-      axios.get('https://quizermern.onrender.com', { params: { category, activity } })
+      axios.get('https://quizermern.onrender.com/api/questions', { params: { category, activity } })
         .then(response => {
           if (Array.isArray(response.data)) {
             setQuestions(response.data);

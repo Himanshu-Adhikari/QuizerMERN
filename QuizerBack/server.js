@@ -30,7 +30,7 @@ app.get('/api/questions', async (req, res) => {
   try {
     const questions = await Question.find({ category, activity });
     // console.log('Questions found:', questions);
-    // res.json(questions);
+    res.json(questions);
   } catch (error) {
     console.error('Error fetching questions:', error);
     res.status(500).json({ message: error.message });
