@@ -13,7 +13,11 @@ const URI = process.env.DB_URI;
 // Middleware
 app.use(cors());
 app.use(express.json()); // For parsing application/json
-console.log("g");
+app.use(cors({
+  origin: ["http://localhost:5173", "https://todo-front-ot0y.onrender.com"],
+  methods: [ 'GET'],
+  credentials: true
+}))
 // Connect to MongoDB
 mongoose.connect(URI, { dbName: "quizer" })
   .then(() => console.log("MongoDB connection successful"))
