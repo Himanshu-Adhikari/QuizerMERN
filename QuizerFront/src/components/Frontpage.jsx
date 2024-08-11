@@ -21,11 +21,11 @@ function Frontpage() {
   return (
     <>
       <div className="fixed w-full h-screen bg-zinc-950 flex items-center justify-center">
-        <div className="absolute z-[2] text-6xl sm:text-8xl transform -translate-x-1/2 -translate-y-1/2 tracking-tighter leading-none top-[10%] sm:top-[15%] left-1/2 text-white font-bold drop-shadow-lg  ">
+        <div className="absolute z-[2] text-6xl sm:text-8xl transform -translate-x-1/2 -translate-y-1/2 tracking-tighter leading-none top-[10%] sm:top-[10%] left-1/2 text-white font-bold drop-shadow-lg  ">
           Quizer
         </div>
 
-        <div className="fixed top-[30%] sm:top-1/3 flex flex-col items-center gap-8">
+        <div className="fixed top-[20%]  sm:top-1/4 flex flex-col items-center gap-8">
           {/* Category Section */}
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-3xl sm:text-4xl font-bold text-yellow-400">
@@ -50,7 +50,7 @@ function Frontpage() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-4" >
+          <div className="flex flex-col items-center gap-4">
             <h3 className="text-3xl sm:text-4xl font-bold text-yellow-400">
               Select an Activity
             </h3>
@@ -69,7 +69,7 @@ function Frontpage() {
                 </div>
               ))}
             </div>
-            <div className="relative inline-flex group mt-10">
+            <div className="fixed bottom-10 inline-flex group mt-10">
               <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-lg blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <button
                 className={`relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transform hover:scale-105 active:scale-95 ${
