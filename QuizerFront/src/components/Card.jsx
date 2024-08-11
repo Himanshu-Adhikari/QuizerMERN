@@ -79,7 +79,7 @@ const Card = () => {
               Your Score: {score} / {questions.length}
             </h2>
             <button
-              className="mt-4 px-8 py-4 bg-yellow-600 hover:bg-yellow-700 text-zinc-950 text-xl font-semibold rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+              className="mt-4 px-8 py-4 bg-yellow-600 hover:bg-yellow-700 text-zinc-950 text-2xl font-semibold rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
               onClick={() => {
                 navigate('/');
               }}
@@ -101,25 +101,25 @@ const Card = () => {
                   <p className="font-medium  pb-2 text-yellow-400">Options:</p>
                   <div className="flex flex-col items-center justify-center space-y-2 text-center">
                     <button
-                      className={`p-2 max-w-80 w-full rounded border ${selectedAnswers[question.id] === question.option1 ? 'bg-yellow-500 text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
+                      className={`p-2 max-w-80 w-full rounded border ${selectedAnswers[question.id] === question.option1 ? 'bg-yellow-500 text-zinc-950 font-semibold' : 'bg-zinc-800 border-zinc-500 text-yellow-400'}`}
                       onClick={() => handleAnswerClick(question.id, question.option1)}
                     >
                       {question.option1}
                     </button>
                     <button
-                      className={`p-2 max-w-80 w-full rounded border ${selectedAnswers[question.id] === question.option2 ? 'bg-yellow-500 text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
+                      className={`p-2 max-w-80 w-full rounded border ${selectedAnswers[question.id] === question.option2 ? 'bg-yellow-500 font-semibold text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
                       onClick={() => handleAnswerClick(question.id, question.option2)}
                     >
                       {question.option2}
                     </button>
                     <button
-                      className={`p-2 w-full max-w-80 rounded border ${selectedAnswers[question.id] === question.option3 ? 'bg-yellow-500 text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
+                      className={`p-2 w-full max-w-80 rounded border ${selectedAnswers[question.id] === question.option3 ? 'bg-yellow-500 font-semibold text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
                       onClick={() => handleAnswerClick(question.id, question.option3)}
                     >
                       {question.option3}
                     </button>
                     <button
-                      className={`p-2 rounded w-full max-w-80 border ${selectedAnswers[question.id] === question.option4 ? 'bg-yellow-500 text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
+                      className={`p-2 rounded w-full max-w-80 border ${selectedAnswers[question.id] === question.option4 ? 'bg-yellow-500 font-semibold text-zinc-950' : 'bg-zinc-800 border-zinc-600 text-yellow-400'}`}
                       onClick={() => handleAnswerClick(question.id, question.option4)}
                     >
                       {question.option4}
@@ -131,7 +131,7 @@ const Card = () => {
           </div>
           <div className="flex justify-center mt-4">
             <button
-              className="bg-yellow-600 hover:bg-yellow-700 text-zinc-950 text-2xl py-2 px-6 rounded-lg shadow-lg"
+              className="bg-yellow-700 hover:bg-yellow-600 text-zinc-950 text-2xl font-semibold py-2 px-6 rounded-lg shadow-lg "
               onClick={handleSubmit}
             >
               Submit
